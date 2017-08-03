@@ -21,6 +21,14 @@ p {
 </style>
 <script>
 
+
+var timeSinceEpoch = function() {
+    var date = new Date();
+    var content = date.now();
+
+    return content;
+}
+console.log(timeSinceEpoch());
 var timer = document.getElementById("clock").innHTML = "some time";
 
 
