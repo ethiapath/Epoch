@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <title>Time since UNIX epoch</title>
+<script src="jquery.js"></script>
 <style type="text/css">
 
 body {
@@ -21,10 +22,19 @@ p {
 </style>
 <script>
 
-var timer = document.getElementById("clock").innerHTML = "some time";
+/*<<<<<<< HEAD
 
+>>>>>>> cc5768c672b233e31e3fc5bf1a8055b5a3c77125*/
 
-
+$(document).ready(function() {
+//	var timer = document.getElementById("clock").innerHTML = "some time";
+    var timer = $("")
+    var timer = new Date();
+    var content = timer.now;
+	    
+	console.log(content);
+	var timer = document.getElementById("clock").innHTML = "some time";
+});
 
 </script>
 </head>
