@@ -28,12 +28,9 @@ p {
 
 $(document).ready(function() {
 //	var timer = document.getElementById("clock").innerHTML = "some time";
-    var timer = $("")
-    var timer = new Date();
-    var content = timer.now;
-	    
+    var content = new Date();
 	console.log(content);
-	var timer = document.getElementById("clock").innHTML = "some time";
+    $("#clock").text(Date.now());
 });
 
 </script>
