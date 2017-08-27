@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <title>Time since UNIX epoch</title>
 <script src="jquery.js"></script>
+<script src="script.js"></script>
 <style type="text/css">
 
 body {
@@ -20,41 +21,6 @@ p {
     font-style: normal;
 }
 </style>
-<script>
-
-/*<<<<<<< HEAD
-
->>>>>>> cc5768c672b233e31e3fc5bf1a8055b5a3c77125*/
-
-function showTimeSinceUinx(wraper) {
-    var time = { 
-        seconds: Date.now() / 1000,
-        minutes: seconds / 60000,
-        days: minutes / 1440,
-        years: days / 365
-    };
-
-    for (var unit in time) {
-        var ele = $('<div id=#timeLabel></div>');
-        var iner = $('<div></div>');
-        iner.addClass(unit);
-        iner.text(time[unit]);
-        iner.appendTo(unit);
-        ele.appendTo( $("#clock") ;
-    }
-
-}
-
-
-$(document).ready(function() {
-//	var timer = document.getElementById("clock").innerHTML = "some time";
-
-    $("#clock").text(Date.now());
-
-    showTimeSinceUinx($("#clock"));
-});
-
-</script>
 </head>
 <body>
 <h1 id="heading">Time since UNIX epoch time - January, 01, 1970</h1>
