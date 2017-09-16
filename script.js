@@ -3,6 +3,7 @@
 
 >>>>>>> cc5768c672b233e31e3fc5bf1a8055b5a3c77125*/
 
+
 function listAllInObj(obj, wraper) {
 
     console.log("listed");
@@ -14,7 +15,6 @@ function listAllInObj(obj, wraper) {
         iner.appendTo(ele);
     }
     ele.appendTo( wraper );
-
 }
 
 
@@ -36,8 +36,6 @@ $(document).ready(function() {
             years: Date.now() / 31536000000
         }; 
     */
-
-    
     setInterval(function() {
         $("#clock").html("");
         listAllInObj({ 
@@ -48,6 +46,6 @@ $(document).ready(function() {
             days: Date.now() / 86400000,
             years: Date.now() / 31536000000
         }, $("#clock"));
-    },5000);
+    },1000);
 });
 
