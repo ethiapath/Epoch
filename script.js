@@ -46,6 +46,6 @@ $(document).ready(function() {
             days: Date.now() / 86400000,
             years: Date.now() / 31536000000
         }, $("#clock"));
-    },1000);
+    },50);
 });
 
